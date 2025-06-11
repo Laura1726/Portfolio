@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Laura Bornert - BUT Informatique</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-title">Laura Bornert</h1>
+            <ul class="nav-menu">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#competences" class="nav-link">Compétences</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page d'accueil -->
+    <main id="accueil">
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Bienvenue sur mon portfolio de BUT Informatique</h1>
+                    <div class="hero-subtitle">
+                        <h2>Qui suis-je ?</h2>
+                        <p>Je m'appelle <strong>Laura Bornert</strong>, étudiante en <strong>BUT Informatique</strong> à l'IUT de Belfort, actuellement en fin de <strong>première année</strong>.</p>
+                        <p>Ce site web a pour objectif de présenter une sélection de projets réalisés durant l'année universitaire 2024-2025, et surtout de <strong>montrer les compétences que j'ai développées</strong> au fil de ces expériences.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-card">
+                        <h3>Pourquoi ce portfolio ?</h3>
+                        <p>L'objectif principal de ce portfolio n'est pas seulement de montrer ce que j'ai produit, mais <strong>de prouver que je maîtrise certains savoirs et savoir-faire essentiels en informatique</strong>, à travers l'analyse de projets concrets.</p>
+                        <p>Pour cela, j'ai sélectionné <strong>deux compétences</strong> du programme de BUT Informatique, que j'ai mises en œuvre dans le cadre de <strong>deux SAÉ</strong> (Situations d'Apprentissage et d'Évaluation) réalisées en équipe.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Ce que vous trouverez sur ce site</h3>
+                        <ul>
+                            <li>Une <strong>analyse</strong> de la compétence <strong>UE 4 : Gérer des données de l'information</strong>, illustrée par la SAÉ 2.04 (création d'un site de e-commerce de vente de meubles en Python/Flask avec l'utilisation d'une base de données).</li>
+                            <li>Une <strong>analyse de la compétence UE 6 : Travailler dans une équipe informatique</strong>, illustrée par la SAÉ 1.05-1.06 (Créer un site web sur une entreprise informatique).</li>
+                            <li>Pour chaque projet, vous trouverez des <strong>captures d'écran</strong>, des <strong>commentaires détaillés</strong>, et une <strong>mise en lien avec les savoirs acquis</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences" class="competences">
+            <div class="container">
+                <h2 class="section-title">Mes Compétences Développées</h2>
+                <div class="competences-grid">
+                    <div class="competence-card" onclick="showModal('ue4')">
+                        <div class="competence-header">
+                            <h3>UE 4 - Gérer des données de l'information</h3>
+                            <span class="competence-tag">SAÉ 2.04</span>
+                        </div>
+                        <p>Création d'un site de e-commerce de vente de meubles (Naturalis)</p>
+                        <div class="competence-skills">
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Python/Flask</span>
+                            <span class="skill-tag">Base de données</span>
+                        </div>
+                        <button class="btn-primary">Découvrir le projet</button>
+                    </div>
+
+                    <div class="competence-card" onclick="showModal('ue6')">
+                        <div class="competence-header">
+                            <h3>UE 6 - Travailler dans une équipe informatique</h3>
+                            <span class="competence-tag">SAÉ 1.05-1.06</span>
+                        </div>
+                        <p>Création d'un site web d'une entreprise d'informatique (Thalès entreprise)</p>
+                        <div class="competence-skills">
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">Discord</span>
+                            <span class="skill-tag">Travail collaboratif</span>
+                        </div>
+                        <button class="btn-primary">Découvrir le projet</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal UE4 -->
+    <div id="ue4Modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('ue4')">&times;</span>
+            <h2>Compétence UE4 - Gérer des données de l'information</h2>
+            <p class="modal-subtitle">SAÉ 2.04 - Création d'un site de e-commerce de vente de meubles (Naturalis)</p>
+            
+            <div class="figure-section">
+                <h3>Figure 1 : Création des tables SQL pour le site Naturalis</h3>
+                <div class="figure-content">
+                    <div class="image-container">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Capture%20d%E2%80%99e%CC%81cran%202025-06-10%20a%CC%80%2010.53.50-XQnJWk6lyif3prJ1SNZZQEcd7fIFgB.png" alt="Code SQL pour création des tables" class="figure-image">
+                    </div>
+                    <div class="figure-description">
+                        <p>La Figure 1 montre une partie du fichier sql_projet.sql, que j'ai moi-même rédigé dans le cadre du projet <strong>Naturalis</strong>, une application web de vente de meubles. L'objectif était de créer une base de données, c'est-à-dire un "espace organisé" dans lequel on stock toutes les informations nécessaires au bon fonctionnement du site : les utilisateurs, les produits, les commandes, etc.</p>
+                        
+                        <p>Avant de pouvoir utiliser une base de données, il faut la <strong>concevoir</strong> : cela consiste à décider <strong>quelles tables</strong> on aura (par exemple une table utilisateur pour les clients et administrateurs), <strong>quels types de données</strong> on va stocker (texte, nombre, date, etc.), et <strong>comment lier ces tables entre elles</strong>.</p>
+                        <p>Avant de pouvoir l’utiliser, il faut concevoir cette base : cela signifie décider quelles données doivent être <strong>enregistrées</strong> , dans quelles tables, sous quelle forme (texte, nombre, booléen…), et comment les différentes tables sont reliées entre elles. Dans l’exemple de la figure, on voit notamment la <strong>table utilisateur</strong> avec des colonnes comme <strong>login</strong> , <strong>email</strong> , ou <strong>role</strong> .</p>
+
+                        <h4>Savoirs :</h4>
+                        <ul>
+                            <li>Compréhension du <strong>rôle</strong>  d’une base de données relationnelle dans une application web.</li>
+                            <li>Connaissance des <strong>types de données SQL</strong>  (VARCHAR, INT, BOOLEAN…).</li>
+                            <li>Notion de <strong>clé primaire et de contraintes d’intégrité</strong>  (ex. NOT NULL, UNIQUE).</li>
+                            <li>Traduction d'un <strong>besoin fonctionnel en structure de base de données</strong></li>
+                        </ul>
+
+                        <h4>Savoir-faire :</h4>
+                        <ul>
+                            <li>Écriture d’instructions SQL pour créer les tables et supprimer les anciennes (DROP TABLE, CREATE TABLE).</li>
+                            <li>Utilisation de <strong>contraintes et types de champs</strong> pour garantir la cohérence des données</li>
+                            <li>Préparation d'un <strong>environnement de base de données propre et réutilisable grâce à la clause IF NOT EXISTS</strong></li>
+                            <li>Organisation logique de la base pour qu’elle soit facilement exploitable par les développeurs.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="figure-section">
+                <h3>Figure 2 : Exécution d'une requête SQL depuis une application Flask (Python)</h3>
+                <div class="figure-content">
+                    <div class="image-container">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Capture%20d%E2%80%99e%CC%81cran%202025-06-10%20a%CC%80%2010.55.26-EsLs3Z6dn8MXxRLCfJMLYUBB8v3ONE.png" alt="Code Python Flask" class="figure-image">
+                    </div>
+                    <div class="figure-description">
+                        <p>La Figure 2 montre le lien entre la base de données et le code Python du site Naturalis.</p>
+                        <p>Ici, il s’agit d’un <strong>contrôleur</strong> , c’est-à-dire un composant du site web qui va chercher les données dans la base et les afficher à l’utilisateur connecté.</p>
+                        
+                        <p>La fonction affichée (client_coordonnee_show) permet par exemple de récupérer les informations d’un utilisateur à partir de son identifiant de session, puis d’exécuter une requête SQL pour afficher les adresses et le nombre de commandes liées à chaque adresse.</p>
+                        
+                        <h4>Savoirs :</h4>
+                        <ul>
+                            <li>Compréhension du fonctionnement d’un contrôleur dans un site web dynamique.</li>
+                            <li>Notion de sécurité des requêtes SQL (prévention des injections avec les requêtes paramétrées).</li>
+                            <li>Compréhension de la jointure logique entre les tables (ici : utilisateur, adresse, commande).</li>
+                            <li>Notions de calculs en base de données avec des fonctions comme COUNT() ou DISTINCT.</li>
+                        </ul>
+
+                        <h4>Savoir-faire :</h4>
+                        <ul>
+                            <li>Connexion à une base de données depuis du code Python.</li>
+                            <li>Écriture de requêtes SQL avancées et intégration dans le code via des paramètres (%s).</li>
+                            <li>Exploitation des résultats SQL dans le programme (fetchone()).</li>
+                            <li>Adaptation de la logique métier au contexte utilisateur (affichage dynamique selon session).</li>
+                        </ul>
+                        
+                        <p>Cette figure illustre ma capacité à <strong>extraire et manipuler des données en fonction de l'utilisateur connecté</strong>, ce qui est fondamental pour tout site dynamique.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal UE6 -->
+    <div id="ue6Modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('ue6')">&times;</span>
+            <h2>Compétence UE6 - Travailler dans une équipe informatique</h2>
+            <p class="modal-subtitle">SAÉ 1.05-1.06 - Créer un site web d'une entreprise d'informatique (Thalès entreprise)</p>
+            
+            <div class="figure-section">
+                <h3>Figure 1 : Visualisation des contributions GitHub de l'équipe</h3>
+                <div class="figure-content">
+                    <div class="image-container">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Capture%20d%E2%80%99e%CC%81cran%202025-05-28%20a%CC%80%2011.11.32-EgY99qUH9wcbsTW9O4u9KCbJLXhYbt.png" alt="Statistiques GitHub" class="figure-image">
+                    </div>
+                    <div class="figure-description">
+
+                        <p>La Figure 1 montre des statistiques GitHub et mes contributions sur la période de septembre 2024 à mai 2025. On y observe que j'ai effectué <strong>34 commits</strong>, avec <strong>638 lignes ajoutées</strong> et <strong>205 supprimées</strong>. Ces chiffres montrent que j'ai été un membre actif, en particulier durant la phase de développement en octobre 2024.</p>
+
+                        <h4>Savoirs :</h4>
+                        <ul>
+                            <li>Principe de <strong>versioning collaboratif</strong></li>
+                            <li>Utilité des <strong>commits</strong> et du suivi de l'historique des modifications</li>
+                            <li>Règles de nommage, documentation dans les commits</li>
+                        </ul>
+                        
+                        <h4>Savoir-faire :</h4>
+                        <ul>
+                            <li>Utiliser GitHub pour <strong>versionner un projet en équipe</strong></li>
+                            <li><strong>Partager, synchroniser et intégrer</strong> du code (push/pull/merge)</li>
+                            <li>Analyser les <strong>statistiques de contribution</strong> pour répartir équitablement les tâches</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="figure-section">
+                <h3>Figure 2 : Utilisation de Discord pour la gestion collaborative</h3>
+                <div class="figure-content">
+                    <div class="image-container">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Capture%20d%E2%80%99e%CC%81cran%202025-05-28%20a%CC%80%2011.13.53-UDBipQSMH61ke5YnhWFZXuWnhCTaTt.png" alt="Interface Discord" class="figure-image">
+                    </div>
+                    <div class="figure-description">
+
+                        <p>La Figure 2 montre notre serveur Discord dédié à la SAÉ S1.05-S1.06. L'organisation en canaux thématiques (#discussion, #répartition-pages, #zoning-wireframe-style-tile, #commandes-git) nous a permis de <strong>structurer la communication</strong> et d'éviter que les messages importants soient noyés dans des discussions générales.</p>
+
+                        <h4>Savoirs :</h4>
+                        <ul>
+                            <li>Organisation de l'information par <strong>canaux thématiques</strong></li>
+                            <li>Utilisation d'<strong>outils collaboratifs en ligne</strong></li>
+                            <li>Importance de la <strong>communication asynchrone</strong> dans un projet informatique</li>
+                        </ul>
+                        
+                        <h4>Savoir-faire :</h4>
+                        <ul>
+                            <li>Utiliser Discord pour organiser et suivre le travail d'équipe</li>
+                            <li><strong>Partager des ressources</strong>, poser des questions techniques, coordonner les tâches</li>
+                            <li>Structurer un espace de discussion pour <strong>éviter la confusion</strong> et centraliser l'information</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <p>&copy; 2025 Laura Bornert - Portfolio BUT Informatique - IUT de Belfort</p>
+            <p>GitHub : <a href="https://github.com/Laura1726">Laura</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function showModal(modalId) {
+            document.getElementById(modalId + 'Modal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId + 'Modal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
